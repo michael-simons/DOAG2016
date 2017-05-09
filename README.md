@@ -24,17 +24,15 @@ Those posts cover the talk and the project in great detail. Please provide feedb
 
 _Note: The talk and the slides are in German as DOAG con is a German conference, the demo, the readme and other artifacts inside this repo are in English in hope they are useful to a broader audience._
 
-This repository contains the This repository contains the talk, including my notes and the complete demo, I've created for [DOAG Konferenz + Ausstellung](https://2016.doag.org/de/home/) in Nürnberg.
+This repository contains the talk, including my notes and the complete demo, I've created for [DOAG Konferenz + Ausstellung](https://2016.doag.org/de/home/) in Nürnberg.
 
-Here's the link to the german manuscript: [Datenbankzentrische Anwendungen mit Spring Boot und jOOQ](talk/manuskript.adoc).
-
-The basic idea of this demo is to create "cloud native" app based on [Spring Boot](http://projects.spring.io/spring-boot) and then using [jOOQ](http://www.jooq.org) as "database first", SQL-centric approach to your database.
+The basic idea of this demo is to create a "cloud native" app based on [Spring Boot](http://projects.spring.io/spring-boot) and then using [jOOQ](http://www.jooq.org) as "database first", SQL-centric approach to your database.
 
 Functional wise the application deals with a simple database model storing the names, artists, genres and albums of tracks I listened to the last years. Those data in full comes from my daily foto project [Daily Fratze](https://dailyfratze.de) that I've been running this year for more than 12 years.
 
 The application demonstrates the value of jOOQ when it comes to analysis of data, an area for which ORMs like hibernate weren't designed (see comment by Gavin King on ["What ORMs have taught me: just learn SQL"](https://www.reddit.com/r/programming/comments/2cnw8x/what_orms_have_taught_me_just_learn_sql/cjheyec). If you just deal with simple inserts, updates and deletes during OLTP, you're mostly fine using ORMs like JPA, even problems like the _n+1_ query problems are known and often solved.
 
-But if you want to use [modern sql](https://modern-sql.com) and [the index](http://use-the-index-luke.com), for example powerful, analytic functions or have to deal with a database model that is a less than optimal fit for an ORM, than jOOQ will help you.
+But if you want to use [modern sql](https://modern-sql.com) and ["the index"](http://use-the-index-luke.com), to use powerful, analytic functions or if you have to deal with a database model that is a less than optimal fit for an ORM, than jOOQ will help you.
 
 ## Sample requests
 
